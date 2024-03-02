@@ -20,7 +20,7 @@ export default class Score {
         this.ctx    = this.canvas.ctx;
 
         this.score  = 0;
-        this.lives  = 2;
+        this.lives  = 0;
         this.bonus  = 0;
         this.ghosts = 0;
 
@@ -33,7 +33,7 @@ export default class Score {
         this.scoreColor  = "rgb(255, 255, 51)";
         this.fruitTile   = { x: 26, y: 31.5 };
 
-        this.blobs = [ new ScoreBlob(this.board, 0), new ScoreBlob(this.board, 1) ];
+        this.blobs = [ new ScoreBlob(this.board, 0) ];
         this.food  = new Fruit(this.board);
     }
 
